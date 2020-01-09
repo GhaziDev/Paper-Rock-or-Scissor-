@@ -12,27 +12,11 @@ while True:
         print(c)
         print("Draw!")
         tie=tie+1
-    elif (q == "scissor" and c == "rock"):
-        print(c)
-        print("You lost")
-        lose=lose+1
-    elif (q == "rock" and c == "scissor"):
+    elif ((q == "paper" and c == "rock") or (q == "scissor" and c == "paper") or (q == "rock" and c == "scissor")):
         print(c)
         print("You won")
         win=win+1
-    elif (q == "paper" and c == "rock"):
-        print(c)
-        print("You won")
-        win=win+1
-    elif (q == "rock" and c == "paper"):
-        print(c)
-        print("You lost")
-        lose=lose+1
-    elif (q == "scissor" and c == "paper"):
-        print(c)
-        print("you won")
-        win=win+1
-    elif (q == "paper" and c == "scissor"):
+    else:
         print(c)
         print("you lost")
         lose=lose+1
